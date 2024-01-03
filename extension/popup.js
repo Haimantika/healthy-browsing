@@ -1,9 +1,6 @@
-<link rel="stylesheet" href="styles.css"></link>
-document.getElementById('snooze').addEventListener('click', () => {
-    // Clear the existing alarm
+  document.getElementById('snooze').addEventListener('click', () => {
+    const snoozeDuration = Number(document.getElementById('snoozeDuration').value);
     chrome.alarms.clear('healthAlarm');
-    // Set a new alarm for 10 minutes later
-    chrome.alarms.create('healthAlarm', { delayInMinutes: 10 });
+    chrome.alarms.create('healthAlarm', { delayInMinutes: snoozeDuration });
     window.close(); // Close the popup
   });
-  
