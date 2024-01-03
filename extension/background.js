@@ -1,7 +1,7 @@
 chrome.runtime.onInstalled.addListener(() => {
   chrome.storage.sync.get(['snoozeDuration'], (data) => {
       const snoozeDuration = data.snoozeDuration || 10;
-      chrome.alarms.create('healthAlarm', { periodInMinutes: snoozeDuration });
+      chrome.alarms.create('healthAlarm', { periodInMinutes: 60 });
   });
 });
 
