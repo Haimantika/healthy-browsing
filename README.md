@@ -15,3 +15,5 @@ The Health Browsing extension for Chrome is designed to promote healthy habits f
 - Enable "Developer mode" at the top-right.
 - Click "Load unpacked" and select the unzipped HealthBrowsing folder.
 - The Health Browsing extension icon should now appear in your Chrome toolbar.
+
+_Note- This extension is a very basic one, and has been built for learning purposes. It has not been published in the Chrome Web Store._
