@@ -1,18 +1,18 @@
 chrome.runtime.onInstalled.addListener(() => {
-    // Create an alarm that fires every 60 minutes
-    chrome.alarms.create('healthAlarm', { periodInMinutes: 60 });
+  chrome.storage.sync.get(['snoozeDuration'], (data) => {
+      const snoozeDuration = data.snoozeDuration || 10;
+      chrome.alarms.create('healthAlarm', { periodInMinutes: snoozeDuration });
   });
-  
-  chrome.alarms.onAlarm.addListener((alarm) => {
-    if (alarm.name === 'healthAlarm') {
-      // Trigger a notification for the user
+});
+
+chrome.alarms.onAlarm.addListener((alarm) => {
+  if (alarm.name === 'healthAlarm') {
       chrome.notifications.create('reminder', {
-        type: 'basic',
-        iconUrl: 'images/icon48.png',
-        title: 'Time for a Break!',
-        message: 'Take a moment to stretch, hydrate, or rest your eyes.',
-        priority: 2
+          type: 'basic',
+          iconUrl: 'images/icon48.png',
+          title: 'Time for a Break!',
+          message: 'Take a moment to stretch, hydrate, or rest your eyes.',
+          priority: 2
       });
-    }
-  });
-  
+  }
+});
