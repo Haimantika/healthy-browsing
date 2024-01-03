@@ -1,0 +1,20 @@
+# Contributing to Healthy Browsing
+We welcome contributions to the Healthy Browsing Chrome extension. Whether it's fixing bugs, adding new features, or improving documentation, your input is valuable.
+
+## How to Contribute
+- Fork the Repository: Create a fork of the Health Browsing repository.
+- Clone the Forked Repository: Clone it to your local machine.
+- Create a New Branch: Make your changes in a new branch.
+- Commit Your Changes: Once you've made your changes, commit them with a clear message.
+- Push to the Branch: Push your changes to your fork.
+- Submit a Pull Request: Open a pull request from your fork to the main Health Browsing repository.
+
+## Guidelines
+- Code Style: Please adhere to the coding style of the project.
+- Commit Messages: Write meaningful commit messages.
+- Testing: Add tests for new features to ensure they work as expected.
+- Documentation: Update documentation accordingly.
+
+## Support
+For support or to report issues, please file an issue on the GitHub repository.
+
