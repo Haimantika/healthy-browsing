@@ -14,7 +14,7 @@
         "128": "images/icon128.jpg"
       }
     },
-    "permissions": ["alarms", "notifications"],
+    "permissions": ["alarms","activeTab","storage", "notifications"],
     "icons": {
       "16": "images/icon16.jpg",
       "48": "images/icon48.jpg",
