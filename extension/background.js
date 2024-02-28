@@ -8,7 +8,7 @@ chrome.runtime.onInstalled.addListener(() => {
       // Trigger a notification for the user
       chrome.notifications.create('reminder', {
         type: 'basic',
-        iconUrl: 'images/icon48.jpg',
+        iconUrl: 'images/icon48.png',
         title: 'Time for a Break!',
         message: 'Take a moment to stretch, hydrate, or rest your eyes.',
         priority: 2

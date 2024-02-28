@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="styles.css"></link>
 document.getElementById('snooze').addEventListener('click', () => {
     // Clear the existing alarm
     chrome.alarms.clear('healthAlarm');
